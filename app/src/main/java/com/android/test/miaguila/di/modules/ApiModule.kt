@@ -1,5 +1,6 @@
 package com.android.test.miaguila.di.modules
 
+import com.android.test.miaguila.networking.api.GoogleMapsApi
 import com.android.test.miaguila.networking.api.MiAguilaApi
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import dagger.Module
@@ -36,5 +37,17 @@ class ApiModule {
             .client(httpClient.build())
             .build()
         return retrofit.create(MiAguilaApi::class.java)
+    }
+
+    @Singleton
+    @Provides
+    fun providesGoogleMapsApiService(httpClient: OkHttpClient.Builder): GoogleMapsApi {
+        val retrofit = Retrofit.Builder()
+            .addConverterFactory(GsonConverterFactory.create())
+            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+            .baseUrl(GoogleMapsApi.BASE_URL)
+            .client(httpClient.build())
+            .build()
+        return retrofit.create(GoogleMapsApi::class.java)
     }
 }

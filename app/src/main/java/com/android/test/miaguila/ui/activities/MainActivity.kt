@@ -46,10 +46,28 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     private fun initViewModel() {
         viewModel = ViewModelProviders.of(this)[MainViewModel::class.java]
         viewModel.liveDataRoute.observe(this, Observer {
+            setupContinueButton(it)
             updateMapWithRoute(it)
             updateSummaryRoute(it)
         })
+        viewModel.liveDataPolyline.observe(this, Observer {
+            if(it.isNotEmpty()){
+                googleMap.addPolyline(
+                    PolylineOptions()
+                        .addAll(it)
+                        .color(R.color.maBlueDark)
+                )
+            }
+        })
         viewModel.getRoute()
+    }
+
+    private fun setupContinueButton(route: RouteData.Route) {
+        binding.includeCardView.buttonContinue.setOnClickListener {
+            val origin = route.startLocation[0].toString() + "," + route.startLocation[1].toString()
+            val destination = route.endLocation[0].toString() + "," + route.endLocation[1].toString()
+            viewModel.getPolylines(origin,destination)
+        }
     }
 
     private fun updateSummaryRoute(route: RouteData.Route) {
@@ -96,12 +114,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             val cu = CameraUpdateFactory.newLatLngZoom(center, 15f)
             val paddingBottom = binding.cardContainer.height - binding.cardContainer.paddingTop
             val paddingLeft = binding.cardContainer.paddingStart
-            googleMap.addPolyline(
-                PolylineOptions()
-                    .add(startAddressLocation)
-                    .add(endAddressLocation)
-                    .color(R.color.maBlueDark)
-            )
             googleMap.setPadding(paddingLeft,0,0,paddingBottom)
             googleMap.animateCamera(cu)
         }
