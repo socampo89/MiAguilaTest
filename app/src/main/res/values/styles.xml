@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
+        <item name="android:buttonStyle">@style/CustomTextViewStyle</item>
+    </style>
+
+    <style name="CustomTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/proxima_nova_thin</item>
+    </style>
+
+    <style name="CustomTextViewStyle.Bold" parent="CustomTextViewStyle">
+        <item name="android:fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/proximanova_regular</item>
+    </style>
+
+    <style name="CustomButtonStyle.Bold" parent="CustomButtonStyle">
+        <item name="android:fontFamily">@font/proximanova_semibold</item>
+    </style>
+
+
+    <style name="Title" parent="CustomTextViewStyle.Bold">
+        <item name="android:textColor">@color/maGreen4</item>
+        <item name="android:background">@drawable/title_bg_default</item>
+        <item name="android:padding">@dimen/padding_S</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="Title.Route" parent="Title">
+        <item name="android:drawableStart">@drawable/ic_route</item>
+        <item name="android:drawablePadding">@dimen/padding_M</item>
+        <item name="android:drawableTint">@color/maGreen4</item>
+    </style>
+
+    <style name="Marker" parent="CustomTextViewStyle.Bold">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:paddingStart">@dimen/padding_S</item>
+        <item name="android:paddingEnd">@dimen/padding_S</item>
+        <item name="android:paddingTop">@dimen/padding_XS</item>
+        <item name="android:paddingBottom">@dimen/padding_XS</item>
+        <item name="android:background">@drawable/custom_marker_label_bg</item>
+    </style>
+
+    <style name="ButtonDefault" parent="CustomButtonStyle.Bold">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_default_bg</item>
+        <item name="android:elevation">@dimen/default_elevation</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">@dimen/font_mlarge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

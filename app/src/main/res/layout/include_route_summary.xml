@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.android.test.miaguila.ui.customViews.RouteSummaryView
+        android:id="@+id/route_summary_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text = "Text"
+        app:image="@drawable/circle_start_point"/>
+
+    <com.android.test.miaguila.ui.customViews.RouteSummaryView
+        android:id="@+id/route_summary_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text = "Text"
+        app:image="@drawable/ic_work_start"/>
+
+    <com.android.test.miaguila.ui.customViews.RouteSummaryView
+        android:id="@+id/route_summary_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text = "Text"
+        app:image="@drawable/circle_end_point"/>
+
+    <com.android.test.miaguila.ui.customViews.RouteSummaryView
+        android:id="@+id/route_summary_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text = "Text"
+        app:image="@drawable/ic_work_end"
+        app:end="true"/>
+
+</LinearLayout>

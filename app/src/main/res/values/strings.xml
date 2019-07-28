@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mi Aguila</string>
+    <string name="summary_route">Resumen de mi ruta</string>
+    <string name="days_available">*La ruta esta activa de lunes a viernes</string>
+    <string name="day_monday">L</string>
+    <string name="day_tuesday">M</string>
+    <string name="day_wednesday">M</string>
+    <string name="day_thursday">J</string>
+    <string name="day_friday">V</string>
+    <string name="day_saturday">S</string>
+    <string name="day_sunday">D</string>
+    <string name="button_continue">Continuar</string>
+    <string name="from">Desde %1$s</string>
+    <string name="from_time">Ingreso %1$s</string>
+    <string name="until">Hasta %1$s</string>
+    <string name="until_time">Salida %1$s</string>
+</resources>

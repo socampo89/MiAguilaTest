@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00D6B0</color>
+    <color name="colorPrimary2">#00dfb6</color>
+    <color name="colorPrimaryDark">@color/black70</color>
+    <color name="colorAccent">@color/black50</color>
+    <color name="colorAccentDark">@color/black100</color>
+
+    <color name="black100">#191919</color>
+    <color name="black90">#3d3d3d</color>
+    <color name="black70">#696969</color>
+    <color name="black50">#919191</color>
+    <color name="black40">#a5a5a5</color>
+    <color name="black20">#D3D3D3</color>
+    <color name="black10">#EEF0F0</color>
+    <color name="black5">#F7F7F7</color>
+
+    <color name="maRed">#DF1843</color>
+    <color name="maYellow">#f2c230</color>
+    <color name="maYellow2">#F7DA83</color>
+    <color name="maOrange">#ef6600</color>
+    <color name="maGreen2">#8dbe21</color>
+    <color name="maGreen3">#18A185</color>
+    <color name="maGreen4">#00D5B0</color>
+    <color name="maGreen5">#DCF9F4</color>
+    <color name="maBlueDark">#222233</color>
+    <color name="maBlueLight">#4bc2e0</color>
+    <color name="maGray">#a8a8a8</color>
+    <color name="maGray2">#EFEFEF</color>
+    <color name="maGray3">#648E8E93</color>
+    <color name="maGray4">#7f8E8E93</color>
+
+    <color name="colorVisa">#0023a0</color>
+    <color name="colorAmex">#27aee3</color>
+
+</resources>

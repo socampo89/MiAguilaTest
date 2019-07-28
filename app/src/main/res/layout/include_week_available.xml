@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_M"
+    android:paddingBottom="@dimen/padding_M"
+    android:paddingStart="@dimen/padding_S"
+    android:paddingEnd="@dimen/padding_S">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/day_custom_view_bg"
+            android:gravity="center"
+            android:text="@string/day_monday"
+            android:textAllCaps="true"
+            android:textColor="@color/day_custom_view_text_state"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/padding_S"
+            android:textSize="@dimen/font_mlarge"
+            android:elevation="@dimen/default_elevation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/day_custom_view_bg"
+            android:gravity="center"
+            android:text="@string/day_tuesday"
+            android:textAllCaps="true"
+            android:textColor="@color/day_custom_view_text_state"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/padding_S"
+            android:textSize="@dimen/font_mlarge"
+            android:elevation="@dimen/default_elevation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/day_custom_view_bg"
+            android:gravity="center"
+            android:text="@string/day_wednesday"
+            android:textAllCaps="true"
+            android:textColor="@color/day_custom_view_text_state"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/padding_S"
+            android:textSize="@dimen/font_mlarge"
+            android:elevation="@dimen/default_elevation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/day_custom_view_bg"
+            android:gravity="center"
+            android:text="@string/day_thursday"
+            android:textAllCaps="true"
+            android:textColor="@color/day_custom_view_text_state"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/padding_S"
+            android:textSize="@dimen/font_mlarge"
+            android:elevation="@dimen/default_elevation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/day_custom_view_bg"
+            android:gravity="center"
+            android:text="@string/day_friday"
+            android:textAllCaps="true"
+            android:textColor="@color/day_custom_view_text_state"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/padding_S"
+            android:textSize="@dimen/font_mlarge"
+            android:elevation="@dimen/default_elevation"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/day_custom_view_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/day_saturday"
+            android:textAllCaps="true"
+            android:textColor="@color/day_custom_view_text_state"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/padding_S"
+            android:textSize="@dimen/font_mlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/day_custom_view_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/day_sunday"
+            android:textAllCaps="true"
+            android:textColor="@color/day_custom_view_text_state"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_mlarge"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_S"
+        android:text="@string/days_available"
+        android:textSize="@dimen/font_small"/>
+
+
+</LinearLayout>

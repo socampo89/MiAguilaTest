@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/default_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card_view_info_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_S">
+
+            <TextView
+                android:id="@+id/textView_summary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/summary_route"
+                style="@style/Title.Route"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <include
+                android:id="@+id/include_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                layout="@layout/include_week_available"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_summary" />
+
+            <include
+                android:id="@+id/include_summary_route"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                layout="@layout/include_route_summary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include_week" />
+
+            <Button
+                android:id="@+id/button_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_continue"
+                android:layout_marginTop="@dimen/margin_M"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include_summary_route"
+                app:layout_constraintCircleRadius="@dimen/default_radius"
+                style="@style/ButtonDefault"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/summaryImage"
+        android:layout_width="@dimen/summary_image_tracking_line_size"
+        android:layout_height="@dimen/summary_image_tracking_line_size"
+        android:layout_marginStart="@dimen/margin_M"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/summaryLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/summaryLabel"
+        tools:background="@drawable/circle_start_point"/>
+
+    <View
+        android:id="@+id/summaryLine"
+        android:layout_width="@dimen/summary_tracking_line_width"
+        android:layout_height="@dimen/summary_tracking_line_height"
+        android:background="@color/black100"
+        app:layout_constraintEnd_toEndOf="@+id/summaryImage"
+        app:layout_constraintStart_toStartOf="@+id/summaryImage"
+        app:layout_constraintTop_toBottomOf="@+id/summaryImage" />
+
+    <TextView
+        android:id="@+id/summaryLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_M"
+        android:layout_marginEnd="@dimen/margin_M"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/font_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/summaryImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Route summary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
